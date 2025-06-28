@@ -1,41 +1,25 @@
-# 🌍 Proyecto: Cambio Climático
+# 🕹️ Clasificador de Imágenes de Videojuegos
 
-**Autor:** Francisco Antu Almonacid Cammarata
+Este proyecto utiliza un modelo de aprendizaje profundo entrenado con TensorFlow/Keras para **clasificar imágenes** y decirte **a qué videojuego pertenece** una imagen específica.
 
-## 📝 Descripción general
+## 🎯 Objetivo
 
-Este proyecto tiene como objetivo concientizar sobre los efectos del cambio climático en nuestro planeta, mostrando datos, visualizaciones y posibles soluciones. Está pensado como una herramienta educativa y de análisis que puede ser utilizada tanto por estudiantes como por profesionales interesados en el medio ambiente.
+Identificar correctamente el juego al que corresponde una imagen subida por el usuario. Ideal para coleccionistas, fanáticos o como herramienta de reconocimiento visual en entornos automatizados.
 
----
+## 🧠 Modelo
 
-## 🌱 Propósito del proyecto
+- **Framework:** TensorFlow + Keras
+- **Modelo:** Red neuronal convolucional (CNN)
+- **Entrenamiento:** Dataset personalizado con capturas de pantalla de distintos videojuegos (por ejemplo: Mario, Sonic, Zelda, Minecraft, etc.)
+- **Entradas:** Imágenes en formato `.jpg` o `.png`
+- **Salidas:** Etiqueta del videojuego correspondiente
 
-- Difundir información relevante y actualizada sobre el cambio climático.
-- Visualizar datos de manera clara para entender tendencias y efectos a nivel global.
-- Proponer ideas y acciones concretas que contribuyan a mitigar sus consecuencias.
+## 🖼️ Ejemplo de uso
 
----
+```python
+# Cargar imagen y predecir
+from predictor import predict_image
 
-## ⚙️ Funciones y características
+resultado = predict_image("ejemplo_mario.jpg")
+print("Este juego es:", resultado)
 
-- 📊 **Visualización de datos climáticos**: gráficos sobre temperatura global, emisiones de CO₂, deshielo polar, etc.
-- 🌡️ **Simulador de impacto**: permite observar posibles escenarios según el aumento de temperatura.
-- 📍 **Mapa interactivo**: muestra regiones afectadas por fenómenos climáticos extremos.
-- 📚 **Sección educativa**: artículos, enlaces y recursos para profundizar en el tema.
-- 🔧 **Fácil de instalar y usar**: pensado para ejecutarse localmente o desplegarse en la web.
-
----
-
-## 🎥 Demostración del funcionamiento
-
-> 🖼️ Aquí podrías agregar capturas de pantalla o un enlace a un video demostrativo (por ejemplo: [Ver en YouTube](https://youtube.com/tu_video))  
-> O incluir un GIF animado mostrando la interfaz.
-
----
-
-## 🚀 Instalación y uso
-
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/tu_usuario/nombre-del-repo.git
-   cd nombre-del-repo
